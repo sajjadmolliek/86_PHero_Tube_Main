@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav icon Link -->
+    <link rel="shortcut icon" href="./image/Icon.png" type="image/x-icon">
+    <!-- DAisy UI and Tailwind Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>P_Hero_Tube</title>
+</head>
+<body>
+    <!-- Start Header Section -->
+    <header>
+
+        <!-- Start Navbar Section -->
+        <nav class="flex justify-center items-center mt-[5vh]">
+            <div class="grid grid-cols-3 w-[90%] flex-wrap justify-center">
+                <!-- <div class="grid grid-cols-3 justify-between "> -->
+                    <div class="flex justify-start">
+                        <img class="w-auto h-[70%]" src="./image/Logo.png" alt="">
+                    </div>
+                    <div class="flex justify-center ">
+                        <button class="text-sm rounded-lg px-3 font-semibold bg-gray-300 hover:text-white hover:bg-slate-600">Sort by view</button>
+                    </div>
+                    <div class="flex justify-end ">
+                        <button id="blog" class="btn bg-red-500 text-white">Blog</button>
+                    </div>
+                <!-- </div> -->
+                
+            </div>
+        </nav>
+
+
+        <!-- Horizontal line -->
+        <div class="flex justify-center">
+            <div class="w-[90%] bg-slate-400 h-[0.5px] mt-5"></div>
+        </div>
+    </header>
+   <!-- Start Main Section -->
+    <main>
+
+        <!-- Section_01 Start -->
+        <section class="flex justify-center mt-[10vh]">
+            <div id="menuSection" class="flex gap-3 flex-wrap">
+
+            </div>
+        </section>
+
+
+        <!-- Section_02 Start -->
+        <section  class="flex justify-center mt-[10vh]">
+            <div id="playListSection" class="grid justify-center items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[90%]">
+
+            </div>
+        </section>
+        <section id="noData">
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
