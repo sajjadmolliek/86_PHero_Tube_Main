@@ -32,6 +32,9 @@ const clickButton1 = async() =>{
 
     const playListSection = document.getElementById('playListSection');
     playListSection.innerHTML ="";
+    const noData = document.getElementById('noData');
+    noData.innerHTML ="";
+    
     sortingData.forEach(element2 => {
         let hr = parseInt((element2?.others?.posted_date)/3600);
             let resHR = (element2?.others?.posted_date)%3600;
