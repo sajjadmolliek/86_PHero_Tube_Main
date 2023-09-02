@@ -1,3 +1,4 @@
+let catId = 1000 ;
 const callMainData = async() => {
     
 const res = await fetch(`https://openapi.programming-hero.com/api/videos/categories`);
@@ -6,6 +7,7 @@ let mainData = data.data;
 
 const menuSection = document.getElementById('menuSection');
 mainData.forEach( element => {
+    
     const div = document.createElement('div');
     div.innerHTML = `
         
@@ -18,13 +20,14 @@ mainData.forEach( element => {
 }
 
 callMainData();
+
 const clickButton2 = async(id) =>{
     callIdData(id);
-}
+    catId = id;
 
+}
 const clickButton1 = async() =>{
-    
-    const res = await fetch(`https://openapi.programming-hero.com/api/videos/category/1000`);
+    const res = await fetch(`https://openapi.programming-hero.com/api/videos/category/${catId}`);
     const data = await res.json();
     let idData = data.data;
 
@@ -32,9 +35,9 @@ const clickButton1 = async() =>{
 
     const playListSection = document.getElementById('playListSection');
     playListSection.innerHTML ="";
-    const noData = document.getElementById('noData');
-    noData.innerHTML ="";
-    
+    // const noData = document.getElementById('noData');
+    // noData.innerHTML ="";
+
     sortingData.forEach(element2 => {
         let hr = parseInt((element2?.others?.posted_date)/3600);
             let resHR = (element2?.others?.posted_date)%3600;
